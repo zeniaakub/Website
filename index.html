@@ -32,6 +32,7 @@
     }
 
     @media (max-width: 720px) {
+
       .carousel,
       .carousel-inner,
       .carousel-item,
@@ -62,12 +63,13 @@
   </style>
 </head>
 
-<body class="bg-light">
+<body class="bg-secondary">
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark sticky-top shadow">
     <div class="container-fluid">
-      <a class="navbar-brand d-flex align-items-center" href="http://www.tatc.ac.th/?usid=20100887&language=Th" target="_blank">
+      <a class="navbar-brand d-flex align-items-center" href="http://www.tatc.ac.th/?usid=20100887&language=Th"
+        target="_blank">
         <img src="image/logotatc.gif" width="30" alt="Logo TATC" class="me-2" />
         วิทยาลัยเทคนิคสัตหีบ
       </a>
@@ -81,8 +83,11 @@
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">ข้อมูลเพิ่มเติม</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#modalRegister">สมัครสมาชิก</a></li>
-              <li><hr class="dropdown-divider" /></li>
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal"
+                  data-bs-target="#modalRegister">สมัครสมาชิก</a></li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
               <li><a class="dropdown-item" href="#">หน้าหลัก</a></li>
               <li><a class="dropdown-item" href="#">ค้นหาบทความ</a></li>
               <li><a class="dropdown-item" href="#">อัลบั้มรูปภาพ</a></li>
@@ -93,7 +98,8 @@
         </ul>
         <ul class="navbar-nav">
           <li class="nav-item"><a class="nav-link" href="#"><i class="bi bi-house-door-fill"></i></a></li>
-          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">เข้าสู่ระบบ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal"
+              data-bs-target="#modalLogin">เข้าสู่ระบบ</a></li>
         </ul>
       </div>
     </div>
@@ -102,9 +108,12 @@
   <!-- Carousel -->
   <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="0" class="active"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="4000">
@@ -124,7 +133,16 @@
       <span class="carousel-control-next-icon"></span>
     </button>
   </div>
-
+  <div class="container my-3 bg-light py-3">
+    <div class="d-flex flex-wrap gap-2 justify-content-center">
+      <a class="btn btn-secondary" href="#">หน่วยงานการศึกษา</a>
+      <a class="btn btn-secondary" href="#">ฝ่ายบริหารทรัพยากร</a>
+      <a class="btn btn-secondary" href="#">ฝ่าวิชาการ</a>
+      <a class="btn btn-secondary" href="#">ฝ่ายแผนงานและความร่วมมือ</a>
+      <a class="btn btn-secondary" href="#">ฝ่ายพัฒนานักเรียนนักศึกษา</a>
+      <a class="btn btn-secondary" href="#">ITA/ข้อมูลสาธารณะ</a>
+    </div>
+  </div>
   <!-- Main Content -->
   <div class="container mt-5">
     <div class="row g-4">
@@ -154,17 +172,16 @@
 
   <div class="container mt-5">
     <div class="row g-4">
-      <div class="col-12 col-md-3">
-        <img src="image/information.png" class="img-fluid rounded shadow" alt="ภาพซ้าย" />
+      <div class="col-12 col-md-3 d-flex flex-column align-items-center">
+        <img src="image/information.png" class="img-fluid rounded shadow mb-3" alt="ภาพซ้าย" />
+        <img src="image/eee.png" class="img-fluid rounded shadow" alt="ภาพซ้ายชุดที่ 2" />
       </div>
+
       <div class="col-12 col-md-6 text-center">
         <img src="image/z.png" class="img-fluid rounded shadow" alt="ภาพกลางชุดที่ 2" />
       </div>
       <div class="col-12 col-md-3">
         <img src="image/w.png" class="img-fluid rounded shadow" alt="ภาพขวาชุดที่ 2" />
-      </div>
-      <div class="col-12 col-md-3">
-        <img src="image/eee.png" class="img-fluid rounded shadow" alt="ภาพซ้ายชุดที่ 2" />
       </div>
     </div>
   </div>
@@ -180,7 +197,7 @@
     </div>
   </footer>
 
-<!-- Modal -->
+  <!-- Modal -->
   <div class="modal fade" id="modalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -216,7 +233,7 @@
       </div>
     </div>
   </div>
- <!-- Modal -->
+  <!-- Modal -->
   <div class="modal fade" id="modalRegister" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
@@ -256,10 +273,10 @@
       </div>
     </div>
   </div>
+
   <script src="js/bootstrap.bundle.js"></script>
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 </body>
-
 </html>
